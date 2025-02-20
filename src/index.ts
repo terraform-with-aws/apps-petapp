@@ -1,6 +1,6 @@
 import 'process';
 import express from 'express';
-const port = process.env.PORT;
+const port = process.env.PORT || 8000;
 
 const app = express()
 
@@ -31,6 +31,7 @@ const petNames = [
   'Fromage',
   'Ganache',
   'Gaston',
+  'Genesis',
   'Hugo',
   'Kaki',
   'Laurent',
@@ -51,9 +52,11 @@ const petNames = [
   'Pascale',
   'Pierre',
   'Quincy',
+  'Razer',
   'Sinclair',
   'Valentin',
   'Vanille',
+  
 ]
 
 app.get('/', (req, res) => {
